@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">My Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="living_room_fragment">Living Room fragment</string>
+    <string name="bed_room_fragment">BedRoom fragment</string>
+    <string name="bath_room_fragment">BathRoom fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="washing_machine_equipment_fragment">Equipment</string>
+    <string name="washing_machine_work_fragment">Work</string>
+    <string name="error_field_password_required">Password is invalid</string>
+    <string name="error_field_email_required">Email is invalid</string>
+    <string name="error_field_username_required">Username is invalid</string>
+    <string name="error_field_phone_required">Phone is invalid</string>
+    <string name="error_field_password_empty">Password cannot be empty</string>
+    <string name="error_field_email_empty">Email cannot be empty</string>
+    <string name="error_field_username_empty">Username cannot be empty</string>
+    <string name="error_field_phone_empty">Phone cannot be empty</string>
+    <string name="error_field_email_existed">Email is Registered</string>
+    <string name="error_filed_phone_existed">Phone Number is Registered</string>
+    <string name="error_field_address_empty">Your Address cannot be empty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- NOTIFICATION  -->
+    <string name="noti_no_internet">No Internet Access</string>
+    <string name="noti_incorrect_password">Incorrect Password</string>
+    <string name="noti_incorrect_email">Email or Password is Incorrect</string>
+    <string name="noti_incorrect_phone">Incorrect Phone Number</string>
+    <string name="noti_signup_success">Sign Up Successful</string>
+    <string name="noti_email_exist">Email is Registered</string>
+    <string name="noti_phone_not_exist">Phone Number is not existed</string>
+
+    <!-- TITLE PROGRESS -->
+    <string name="progress_message_login">Please Wait While Login...</string>
+    <string name="progress_message_signup">Please Wait While Registration...</string>
+    <string name="progress_message_check_internet">Pleas Wait While Check Internet</string>
+    <string name="progress_message_check_phone_exist">Please Wait While Check Phone Number Existed</string>
+
+    <string name="channel_temp">channel temp</string>
+    <string name="channel_temp_description">this is channel temp</string>
+    <string name="channel_humi">channel humi</string>
+    <string name="channel_humi_description">this is channel humi</string>
+    <string name="channel_noise">channel noise</string>
+    <string name="channel_noise_description">this is channel noise</string>
+    <string name="channel_air">channel air</string>
+    <string name="channel_air_description">this is channel air</string>
+    <string name="notification_title">Over Threshold</string>
+    <string name="notification_info">temp sensor was over threshold</string>
+
+    <string-array name="rangeSlider">
+        <item>10</item>
+        <item>50</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

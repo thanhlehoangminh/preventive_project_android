@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="530dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/tx_onoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Off"
+            android:textColor="#232F99"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_onOffBath" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_setting_air_condition" />
+
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:id="@+id/circularSeekBar4"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="60dp"
+            app:cs_circle_color="#00EFCAFC"
+            app:cs_circle_fill="#008F00FF"
+            app:cs_circle_progress_color="#D700C1"
+            app:cs_circle_stroke_width="15dp"
+            app:cs_circle_style="round"
+            app:cs_circle_x_radius="0dp"
+            app:cs_circle_y_radius="0dp"
+            app:cs_disable_pointer="false"
+            app:cs_disable_progress_glow="true"
+            app:cs_end_angle="360"
+            app:cs_hide_progress_when_empty="true"
+            app:cs_lock_enabled="true"
+            app:cs_maintain_equal_circle="true"
+            app:cs_max="30"
+            app:cs_move_outside_circle="true"
+            app:cs_negative_enabled="false"
+            app:cs_pointer_alpha_ontouch="5"
+            app:cs_pointer_angle="0"
+            app:cs_pointer_color="#F2D7FF"
+            app:cs_pointer_stroke_width="25dp"
+            app:cs_progress="58"
+            app:cs_start_angle="90"
+            app:cs_use_custom_radii="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+        <TextView
+            android:id="@+id/textTempBed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="18°C"
+            android:textColor="#8F8F8F"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/circularSeekBar4"
+            app:layout_constraintStart_toStartOf="@+id/circularSeekBar4"
+            app:layout_constraintTop_toTopOf="@+id/circularSeekBar4" />
+
+        <TextView
+            android:id="@+id/tx_name_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Cooling"
+            android:textColor="#9B8FA1"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/circularSeekBar4"
+            app:layout_constraintStart_toStartOf="@+id/circularSeekBar4"
+            app:layout_constraintTop_toBottomOf="@+id/textTempBed" />
+
+        <ImageButton
+            android:id="@+id/btn_onOffBath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/icon_air_btn_off"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/btn_cool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:background="@null"
+            app:layout_constraintStart_toEndOf="@+id/btn_onOffBath"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/icon_cool_air_on" />
+
+        <ImageButton
+            android:id="@+id/btn_dry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_cool"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/icon_dry_air"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/btn_fan_Bath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@+id/btn_dry"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            app:srcCompat="@drawable/icon_fan_air"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/tx_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="41dp"
+            android:text="Fan"
+            android:textColor="#232F99"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_fan_Bath" />
+
+        <TextView
+            android:id="@+id/tx_cool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="54dp"
+            android:text="Cool"
+            android:textColor="#232F99"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tx_dry"
+            app:layout_constraintTop_toBottomOf="@+id/btn_cool" />
+
+        <TextView
+            android:id="@+id/tx_dry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:text="Dry"
+            android:textColor="#232F99"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tx_fan"
+            app:layout_constraintTop_toBottomOf="@+id/btn_dry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Conditioner"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

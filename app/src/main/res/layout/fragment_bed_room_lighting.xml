@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="500dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Intensity"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgBtn_on_off_lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:srcCompat="@drawable/icon_btn_on" />
+
+        <Button
+            android:id="@+id/button_vang"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_button01"
+            app:layout_constraintEnd_toEndOf="@+id/imgBtn_on_off_lamp"
+            app:layout_constraintStart_toStartOf="@+id/imgBtn_on_off_lamp"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtn_on_off_lamp" />
+
+        <Button
+            android:id="@+id/button_tim"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button03"
+            app:layout_constraintEnd_toEndOf="@+id/button_xanh"
+            app:layout_constraintStart_toStartOf="@+id/button_xanh"
+            app:layout_constraintTop_toBottomOf="@+id/button_xanh" />
+
+        <Button
+            android:id="@+id/button_do"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button05"
+            app:layout_constraintEnd_toEndOf="@+id/button_hong"
+            app:layout_constraintStart_toStartOf="@+id/button_hong"
+            app:layout_constraintTop_toBottomOf="@+id/button_hong" />
+
+        <Button
+            android:id="@+id/button_xanh"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button02"
+            app:layout_constraintEnd_toEndOf="@+id/button_vang"
+            app:layout_constraintStart_toStartOf="@+id/button_vang"
+            app:layout_constraintTop_toBottomOf="@+id/button_vang" />
+
+        <Button
+            android:id="@+id/button_hong"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button04"
+            app:layout_constraintEnd_toEndOf="@+id/button_tim"
+            app:layout_constraintStart_toStartOf="@+id/button_tim"
+            app:layout_constraintTop_toBottomOf="@+id/button_tim" />
+
+        <ImageView
+            android:id="@+id/imageViewLamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="83dp"
+            app:layout_constraintStart_toEndOf="@+id/button_vang"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtn_on_off_lamp"
+            app:srcCompat="@drawable/icon_lighting_bed" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="88dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewLamp"
+            app:layout_constraintTop_toBottomOf="@+id/intensityLamp">
+
+            <SeekBar
+                android:id="@+id/seekBari"
+                android:layout_width="290dp"
+                android:layout_height="100dp"
+                android:max="100"
+                android:progress="40"
+                android:progressDrawable="@drawable/bg_custom_seekbar"
+                android:progressTint="@color/tim"
+                android:rotation="270"
+                android:thumb="@color/purple_200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/intensityLamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="40 %"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+            app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lamp"
+            android:textColor="#000000"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

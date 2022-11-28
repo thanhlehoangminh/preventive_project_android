@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:title="Home"
+        android:iconTint="@color/black"
+        android:icon="@drawable/icon_home_off"/>
+    <item
+        android:id="@+id/menu_sensor"
+        android:title="Sensor"
+        android:iconTint="@color/black"
+        android:icon="@drawable/icon_sensor_off"
+    />
+    <item
+        android:title="Setting"
+        android:id="@+id/menu_setting"
+        android:iconTint="@color/black"
+        android:icon="@drawable/icon_setting_off"
+        />
+</menu>

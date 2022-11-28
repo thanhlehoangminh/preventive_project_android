@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment_room.fragmentBedRoom">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/lamp_off"
+            android:background="@drawable/bg_roomitem_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/lamp_off"
+            android:layout_alignTop="@+id/lamp_off"
+            android:background="@drawable/icon_bed_lamp" />
+
+        <Switch
+            android:id="@+id/switch_lamp_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/thumb_selector"
+            android:track="@drawable/track_selector"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/lamp_off"
+            android:layout_alignRight="@+id/lamp_off"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_lamp"
+            android:text="Lamp"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/lamp_off"
+            android:layout_above="@+id/lamp_device"/>
+
+        <com.example.afinal.custom_textView.RobotoRegularTextView
+            android:id="@+id/lamp_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/lamp_off"
+            android:layout_alignBottom="@+id/lamp_off"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="10 Brightness"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/on_off_lamp"
+            android:text="OFF"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignEnd="@+id/lamp_off"
+            android:layout_alignBottom="@+id/lamp_off"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/ac_bed_off"
+            android:background="@drawable/bg_roomitem_off"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/lamp_off"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/ac_bed_off"
+            android:layout_alignTop="@+id/ac_bed_off"
+            android:background="@drawable/icon_bed_ac" />
+
+        <Switch
+            android:id="@+id/switch_ac_bed_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/thumb_selector"
+            android:track="@drawable/track_selector"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/ac_bed_off"
+            android:layout_alignRight="@+id/ac_bed_off"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_ac_bed_off"
+            android:text="LG AC"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/ac_bed_off"
+            android:layout_above="@+id/ac_bed_device"/>
+
+        <com.example.afinal.custom_textView.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ac_bed_device"
+            android:text="1 device"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/ac_bed_off"
+            android:layout_alignBottom="@+id/ac_bed_off"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/on_off_ac_bed"
+            android:text="OFF"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignEnd="@+id/ac_bed_off"
+            android:layout_alignBottom="@+id/ac_bed_off"/>
+        <!--        TV      -->
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_bed_off"
+            android:background="@drawable/bg_roomitem_off"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/lamp_off"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/tv_bed_off"
+            android:layout_alignTop="@+id/tv_bed_off"
+            android:background="@drawable/icon_bed_tv" />
+
+        <Switch
+            android:id="@+id/switch_tv_bed_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/thumb_selector"
+            android:track="@drawable/track_selector"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/tv_bed_off"
+            android:layout_alignRight="@+id/tv_bed_off"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_tv_bed"
+            android:text="Smart TV"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/tv_bed_off"
+            android:layout_above="@+id/tv_bed_device"/>
+
+        <com.example.afinal.custom_textView.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_bed_device"
+            android:text="1 device"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/tv_bed_off"
+            android:layout_alignBottom="@+id/tv_bed_off"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/on_off_tv_bed"
+            android:text="OFF"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignEnd="@+id/tv_bed_off"
+            android:layout_alignBottom="@+id/tv_bed_off"/>
+
+    </RelativeLayout>
+</FrameLayout>

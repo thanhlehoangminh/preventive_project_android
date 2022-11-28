@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FInal.iml" filepath="$PROJECT_DIR$/.idea/modules/FInal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FInal.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FInal.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FInal.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FInal.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FInal.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FInal.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FInal.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FInal.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Smart_Home_Mobile.FInal.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Smart_Home_Mobile.FInal.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Smart_Home_Mobile.FInal.app.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Smart_Home_Mobile.FInal.app.main~1.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_home.fragmentHome">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextClock
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/time"
+            android:layout_alignLeft="@+id/welcome_username"
+            android:format24Hour="hh:mm:ss"
+            android:text="clock"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+
+            />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:id="@+id/welcome_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <com.example.afinal.custom_textView.RobotoLightTextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_username"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="140dp"
+            android:text="7 November 2022"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/background"
+            android:layout_below="@+id/time"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_home" />
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mylocation"
+            android:text="My Location"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="30dp"
+            android:layout_alignLeft="@+id/background"
+            android:layout_alignTop="@+id/background"
+            android:layout_marginTop="20dp"/>
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/local"
+            android:text="Ho Chi Minh"
+            android:textSize="14sp"
+            android:textColor="#99FFFFFF"
+            android:layout_marginLeft="30dp"
+            android:layout_alignLeft="@+id/background"
+            android:layout_below="@+id/mylocation" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather"
+            android:background="@drawable/weather"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignBottom="@+id/background"
+            android:layout_alignLeft="@+id/background"
+            />
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameweather"
+            android:text="Partly Cloud"
+            android:textSize="14sp"
+            android:textColor="#99FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/weather"
+            android:layout_alignBottom="@+id/background" />
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/temperature"
+            android:text="27°C"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_alignRight="@+id/background"
+            android:layout_alignTop="@+id/background" />
+
+        <androidx.appcompat.widget.ActionMenuView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/background"
+            />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_device_living"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/tab_rect"
+        android:elevation="3dp"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/black"
+        app:tabTextAppearance="@style/tablayout" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/room_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_device_living" />
+</RelativeLayout>

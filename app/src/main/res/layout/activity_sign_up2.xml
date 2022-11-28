@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bgColor"
+    tools:context=".login.SignUp2Activity">
+
+    <RelativeLayout
+        android:id="@+id/frmTop"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:background="@drawable/backg">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBack"
+                android:background="@drawable/back_arrow"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/custom_frame_number_activity_signup"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+            <com.example.afinal.custom_textView.RobotoMediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2/3"
+                android:textSize="30sp"
+                android:textColor="#EEE8E8"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="12dp"
+                />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/Bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/homeLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/logo_welcome" />
+
+            <com.example.afinal.custom_textView.RobotoMediumTextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeLogo"
+                android:layout_marginTop="40dp"
+                android:text="Choose Gender"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/tvGender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rdGroup"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbMale"
+                    android:text="Male"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbFemale"
+                    android:text="Female"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbOther"
+                    android:text="Other"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_below="@id/rdGroup"
+                android:layout_marginTop="10dp"
+                android:id="@+id/line"
+                />
+
+            <com.example.afinal.custom_textView.RobotoMediumTextView
+                android:id="@+id/tvChooseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_marginTop="10dp"
+                android:text="Select Your Age"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <DatePicker
+                android:id="@+id/chooseDate"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/tvChooseDate"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:paddingBottom="20dp"
+                android:spinnersShown="true" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_next" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp">
+
+        <com.example.afinal.custom_textView.RobotoMediumTextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Already have an account?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:id="@+id/btnSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/txtSignup"
+            android:text="Sign In"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

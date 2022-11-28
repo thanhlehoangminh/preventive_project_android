@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment_room.fragmentBathRoom">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <ImageButton
+            android:id="@+id/light_bath_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_roomitem_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/light_bath_off"
+            android:layout_alignTop="@+id/light_bath_off"
+            android:background="@drawable/icon_bath_light" />
+
+        <Switch
+            android:id="@+id/switch_light_bath_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/thumb_selector"
+            android:track="@drawable/track_selector"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/light_bath_off"
+            android:layout_alignRight="@+id/light_bath_off"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_light_bath"
+            android:text="Lighting"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/light_bath_off"
+            android:layout_above="@+id/light_bath_device"/>
+
+        <com.example.afinal.custom_textView.RobotoRegularTextView
+            android:id="@+id/light_bath_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/light_bath_off"
+            android:layout_alignBottom="@+id/light_bath_off"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="10 Brightness"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/on_off_light_bath"
+            android:text="OFF"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignEnd="@+id/light_bath_off"
+            android:layout_alignBottom="@+id/light_bath_off"/>
+
+        <ImageButton
+            android:id="@+id/wash_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pana_off"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/light_bath_off"
+            android:layout_alignTop="@+id/light_bath_off"
+            android:background="@drawable/bg_roomitem_off" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@+id/wash_off"
+            android:layout_alignTop="@+id/wash_off"
+            android:background="@drawable/icon_bath_wash" />
+
+        <Switch
+            android:id="@+id/switch_wash_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:thumb="@drawable/thumb_selector"
+            android:track="@drawable/track_selector"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@+id/wash_off"
+            android:layout_alignRight="@+id/wash_off"/>
+
+        <com.example.afinal.custom_textView.RobotoBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_wash"
+            android:text="LG Wash"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/wash_off"
+            android:layout_above="@+id/wash_device"/>
+
+        <com.example.afinal.custom_textView.RobotoRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wash_device"
+            android:text="1 device"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_alignStart="@+id/wash_off"
+            android:layout_alignBottom="@+id/wash_off"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/on_off_wash"
+            android:text="OFF"
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_alignEnd="@+id/wash_off"
+            android:layout_alignBottom="@+id/wash_off"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
